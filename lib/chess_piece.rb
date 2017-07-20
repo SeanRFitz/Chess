@@ -1,5 +1,5 @@
 class Piece
-	attr_accessor :player, :rank, :file
+	attr_accessor :player, :file, :rank
 
 	def initialize(player,file,rank)
 		@player = player

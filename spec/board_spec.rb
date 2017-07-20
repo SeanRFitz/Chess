@@ -26,19 +26,6 @@ describe Board do
 				expect(board.squares[4][4]).to eql("P")
 				expect(board.squares[6][4]).to eql(" ")
 			end
-			it "attempts an invalid move to E5" do
-				expect(board.move_piece("E2","E5",1)).to eql(false)
-			end
-		end
-
-		context "a knight" do
-			it "attempts a valid move to C3" do
-				expect()
-			end
-
-			it "attempts an invalid move to C2" do
-				expect()
-			end
 		end
 	end
 

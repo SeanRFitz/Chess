@@ -1,3 +1,5 @@
+require "pawn"
+
 class Board
 	attr_accessor :squares
 
