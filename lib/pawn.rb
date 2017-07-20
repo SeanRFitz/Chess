@@ -26,6 +26,14 @@ class Pawn < Piece
 		false
 	end
 
+	def display
+		if @player == :white
+			print "\u{265F}"
+		else
+			print "\u{2659}"
+		end
+	end
+
 	private
 	def get_input
 		puts "Where do you want to move the #{(@file + 96).chr.upcase + @rank.to_s} pawn? "
