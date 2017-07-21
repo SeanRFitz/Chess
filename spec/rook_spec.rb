@@ -78,6 +78,10 @@ describe Rook do
 				allow(r2b).to receive(:gets).and_return("f7")
 				expect(r2b.move).to eql(false)
 			end
+			it "returns false for an invalid square K44" do
+				allow(r2b).to receive(:gets).and_return("k44")
+				expect(r2b.move).to eql(false)
+			end
 		end
 	end
 end
