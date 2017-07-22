@@ -18,7 +18,7 @@ class Rook < Piece
 
 	def move
 		new_square, new_file, new_rank = get_input
-		if valid_input?(new_square,rank)
+		if valid_input?(new_square,new_rank)
 			if possible_move?(new_file,new_rank)
 				return new_file, new_rank	
 			else
